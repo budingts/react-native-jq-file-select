@@ -2,24 +2,21 @@
 # install
 npm install react-native-jq-file-select@1.0.0  --save
 #Android 配置
-##// file: android/settings.gradle
-...
+        //file: android/settings.gradle
+        ...
+        include ':react-native-jq-file-select'
+        project(':react-native-jq-file-select').projectDir = new File(settingsDir, '../node_modules/react-native-jq-file-select/android')
+       
+       //file: android/app/build.gradle
+        ...
+        dependencies {
+            ...
+            compile project(':react-native-jq-file-select')
+        }
 
-include ':react-native-jq-file-select'
-project(':react-native-jq-file-select').projectDir = new File(settingsDir, '../node_modules/react-native-jq-file-select/android')
+        //file: android/app/src/main/java/com/<...>/MainApplication.java
 
-
-##// file: android/app/build.gradle
-...
-
-dependencies {
-    ...
-    compile project(':react-native-jq-file-select')
-}
-
-##// file: android/app/src/main/java/com/<...>/MainApplication.java
-...
-
+        ...
         import  FileManager from 'react-native-jq-file-select' // <-- add this import
 
         public class MainApplication extends Application implements ReactApplication {
