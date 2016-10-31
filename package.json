@@ -1,0 +1,24 @@
+{
+  "name": "react-native-jq-file-select",
+  "version": "1.0.0",
+  "description": "android 选择文件插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanq123/react-native-jq-file-select.git"
+  },
+  "keywords": [
+    "react-native-file",
+    "react-native-file-manager",
+    "react-native-file-select"
+  ],
+  "author": "juanqiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanq123/react-native-jq-file-select/issues"
+  },
+  "homepage": "https://github.com/juanq123/react-native-jq-file-select#readme"
+}
