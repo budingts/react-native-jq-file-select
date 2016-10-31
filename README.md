@@ -20,22 +20,22 @@ dependencies {
 ##// file: android/app/src/main/java/com/<...>/MainApplication.java
 ...
 
-import  FileManager from 'react-native-jq-file-select' // <-- add this import
+        import  FileManager from 'react-native-jq-file-select' // <-- add this import
 
-public class MainApplication extends Application implements ReactApplication {
-    @Override
-    protected List<ReactPackage> getPackages() {
-        return Arrays.<ReactPackage>asList(
-            new MainReactPackage(),
-             new FileSelectReactPackage() // <-- add this line
-        );
-    }
-...
-}
+        public class MainApplication extends Application implements ReactApplication {
+         @Override
+         protected List<ReactPackage> getPackages() {
+               return Arrays.<ReactPackage>asList(
+                   new MainReactPackage(),
+                    new FileSelectReactPackage() // <-- add this line
+               );
+         }
+        ...
+        }
 # Usage （RN）js代码中使用
-FileManager.selectFile((response)=>{
-      this.setState({
-        aa:response.error+'---'+response.uri+"----"+response.path,
-      });
-});
+        FileManager.selectFile((response)=>{
+             this.setState({
+               aa:response.error+'---'+response.uri+"----"+response.path,
+            });
+        });
 
