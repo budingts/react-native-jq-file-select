@@ -17,8 +17,7 @@ npm install react-native-jq-file-select@1.0.0  --save
         //file: android/app/src/main/java/com/<...>/MainApplication.java
 
         ...
-        import  FileManager from 'react-native-jq-file-select' // <-- add this import
-
+       
         public class MainApplication extends Application implements ReactApplication {
          @Override
          protected List<ReactPackage> getPackages() {
@@ -30,6 +29,9 @@ npm install react-native-jq-file-select@1.0.0  --save
         ...
         }
 # Usage （RN）js代码中使用
+        import  FileManager from 'react-native-jq-file-select'
+        
+        ...
         FileManager.selectFile((response)=>{
              this.setState({
                aa:response.error+'---'+response.uri+"----"+response.path,
