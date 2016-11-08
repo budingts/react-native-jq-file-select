@@ -1,6 +1,6 @@
 # react-native-jq-file-select
 # install
-npm install react-native-jq-file-select@1.1.0  --save
+npm install react-native-jq-file-select@1.2.1  --save
 #Android 配置
         //file: android/settings.gradle
         ...
