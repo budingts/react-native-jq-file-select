@@ -35,7 +35,7 @@ npm install react-native-jq-file-select@1.2.1  --save
         FileManager.selectFile((response)=>{
              this.setState({
                 //如果有错误，response.error不为空，
-                //如果response.error，说明取到值了，文件路径存在response.path中
+                //如果response.error为空，说明取到值了，文件路径存在response.path中
                aa:response.error+'---'+response.path,
             });
         });
