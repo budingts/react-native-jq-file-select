@@ -1,6 +1,6 @@
 {
   "name": "react-native-jq-file-select",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "本次更新，修改了选择图片的bug",
   "main": "index.js",
   "scripts": {
